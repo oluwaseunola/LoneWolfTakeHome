@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		296DCECF29282CC4001B52DD /* LoneWolfTakeHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DCECE29282CC4001B52DD /* LoneWolfTakeHomeApp.swift */; };
+		296DCED129282CC4001B52DD /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DCED029282CC4001B52DD /* SearchView.swift */; };
+		296DCED329282CC7001B52DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 296DCED229282CC7001B52DD /* Assets.xcassets */; };
+		296DCED629282CC7001B52DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 296DCED529282CC7001B52DD /* Preview Assets.xcassets */; };
+		296DCEE029282CC7001B52DD /* WeatherServiceClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DCEDF29282CC7001B52DD /* WeatherServiceClassTests.swift */; };
+		296DCEFA29282CED001B52DD /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DCEF929282CED001B52DD /* WeatherService.swift */; };
+		296DCEFD29282D51001B52DD /* WeatherServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DCEFC29282D51001B52DD /* WeatherServiceProtocol.swift */; };
+		296DCF00292830AD001B52DD /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DCEFF292830AD001B52DD /* WeatherData.swift */; };
+		296DCF022928375A001B52DD /* CityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DCF012928375A001B52DD /* CityData.swift */; };
+		296DCF0529283B55001B52DD /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DCF0429283B55001B52DD /* Errors.swift */; };
+		296DCF0729284CBB001B52DD /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DCF0629284CBB001B52DD /* MockURLSession.swift */; };
+		296DCF1229293641001B52DD /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DCF1129293641001B52DD /* SearchViewModel.swift */; };
+		296DCF1629293C80001B52DD /* SearchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DCF1529293C80001B52DD /* SearchListView.swift */; };
+		296DCF1929293E79001B52DD /* SearchCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DCF1829293E79001B52DD /* SearchCellView.swift */; };
+		296DCF1B29294A34001B52DD /* WeatherDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DCF1A29294A34001B52DD /* WeatherDetailView.swift */; };
+		296DCF1D29294F99001B52DD /* CityWeatherQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DCF1C29294F99001B52DD /* CityWeatherQuery.swift */; };
+		296DCF2029295AC4001B52DD /* WeatherQueryValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DCF1F29295AC3001B52DD /* WeatherQueryValidator.swift */; };
+		296DCF2229298971001B52DD /* QueryValidatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DCF2129298970001B52DD /* QueryValidatorTest.swift */; };
+		296DCF242929B47A001B52DD /* SearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DCF232929B47A001B52DD /* SearchViewModelTests.swift */; };
+		296DCF2B2929B6B7001B52DD /* QueryValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DCF2A2929B6B6001B52DD /* QueryValidatorProtocol.swift */; };
+		29CC75AE2929D1070091FBDD /* MockWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC75A52929C1160091FBDD /* MockWeatherService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		296DCEDC29282CC7001B52DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 296DCEC329282CC4001B52DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 296DCECA29282CC4001B52DD;
+			remoteInfo = LoneWolfTakeHome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		296DCECB29282CC4001B52DD /* LoneWolfTakeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoneWolfTakeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		296DCECE29282CC4001B52DD /* LoneWolfTakeHomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoneWolfTakeHomeApp.swift; sourceTree = "<group>"; };
+		296DCED029282CC4001B52DD /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		296DCED229282CC7001B52DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		296DCED529282CC7001B52DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		296DCEDB29282CC7001B52DD /* LoneWolfTakeHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoneWolfTakeHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		296DCEDF29282CC7001B52DD /* WeatherServiceClassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceClassTests.swift; sourceTree = "<group>"; };
+		296DCEF929282CED001B52DD /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		296DCEFC29282D51001B52DD /* WeatherServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceProtocol.swift; sourceTree = "<group>"; };
+		296DCEFF292830AD001B52DD /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		296DCF012928375A001B52DD /* CityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityData.swift; sourceTree = "<group>"; };
+		296DCF0429283B55001B52DD /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		296DCF0629284CBB001B52DD /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		296DCF1129293641001B52DD /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		296DCF1529293C80001B52DD /* SearchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListView.swift; sourceTree = "<group>"; };
+		296DCF1829293E79001B52DD /* SearchCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchCellView.swift; path = LoneWolfTakeHome/Views/SearchCellView.swift; sourceTree = SOURCE_ROOT; };
+		296DCF1A29294A34001B52DD /* WeatherDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailView.swift; sourceTree = "<group>"; };
+		296DCF1C29294F99001B52DD /* CityWeatherQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherQuery.swift; sourceTree = "<group>"; };
+		296DCF1F29295AC3001B52DD /* WeatherQueryValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherQueryValidator.swift; sourceTree = "<group>"; };
+		296DCF2129298970001B52DD /* QueryValidatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryValidatorTest.swift; sourceTree = "<group>"; };
+		296DCF232929B47A001B52DD /* SearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelTests.swift; sourceTree = "<group>"; };
+		296DCF2A2929B6B6001B52DD /* QueryValidatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryValidatorProtocol.swift; sourceTree = "<group>"; };
+		29CC75A52929C1160091FBDD /* MockWeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWeatherService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		296DCEC829282CC4001B52DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		296DCED829282CC7001B52DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		296DCEC229282CC4001B52DD = {
+			isa = PBXGroup;
+			children = (
+				296DCECD29282CC4001B52DD /* LoneWolfTakeHome */,
+				296DCEDE29282CC7001B52DD /* LoneWolfTakeHomeTests */,
+				296DCECC29282CC4001B52DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		296DCECC29282CC4001B52DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				296DCECB29282CC4001B52DD /* LoneWolfTakeHome.app */,
+				296DCEDB29282CC7001B52DD /* LoneWolfTakeHomeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		296DCECD29282CC4001B52DD /* LoneWolfTakeHome */ = {
+			isa = PBXGroup;
+			children = (
+				296DCECE29282CC4001B52DD /* LoneWolfTakeHomeApp.swift */,
+				296DCEF829282CDB001B52DD /* Services */,
+				296DCF0329283B47001B52DD /* Custom Errors */,
+				296DCF1E29295A9F001B52DD /* Validators */,
+				296DCEFE29283090001B52DD /* Models */,
+				296DCF1029293585001B52DD /* ViewModels */,
+				296DCF0F29293573001B52DD /* Views */,
+				296DCED229282CC7001B52DD /* Assets.xcassets */,
+				296DCED429282CC7001B52DD /* Preview Content */,
+			);
+			path = LoneWolfTakeHome;
+			sourceTree = "<group>";
+		};
+		296DCED429282CC7001B52DD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				296DCED529282CC7001B52DD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		296DCEDE29282CC7001B52DD /* LoneWolfTakeHomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				296DCEDF29282CC7001B52DD /* WeatherServiceClassTests.swift */,
+				296DCF2129298970001B52DD /* QueryValidatorTest.swift */,
+				296DCF232929B47A001B52DD /* SearchViewModelTests.swift */,
+				2994DECE2929B7BF00D1AD8E /* Mocks */,
+			);
+			path = LoneWolfTakeHomeTests;
+			sourceTree = "<group>";
+		};
+		296DCEF829282CDB001B52DD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				296DCEFB29282CF7001B52DD /* WeatherService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		296DCEFB29282CF7001B52DD /* WeatherService */ = {
+			isa = PBXGroup;
+			children = (
+				296DCEF929282CED001B52DD /* WeatherService.swift */,
+				296DCEFC29282D51001B52DD /* WeatherServiceProtocol.swift */,
+			);
+			path = WeatherService;
+			sourceTree = "<group>";
+		};
+		296DCEFE29283090001B52DD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				296DCEFF292830AD001B52DD /* WeatherData.swift */,
+				296DCF012928375A001B52DD /* CityData.swift */,
+				296DCF1C29294F99001B52DD /* CityWeatherQuery.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		296DCF0329283B47001B52DD /* Custom Errors */ = {
+			isa = PBXGroup;
+			children = (
+				296DCF0429283B55001B52DD /* Errors.swift */,
+			);
+			path = "Custom Errors";
+			sourceTree = "<group>";
+		};
+		296DCF0F29293573001B52DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				296DCED029282CC4001B52DD /* SearchView.swift */,
+				296DCF1529293C80001B52DD /* SearchListView.swift */,
+				296DCF1A29294A34001B52DD /* WeatherDetailView.swift */,
+				296DCF1729293E69001B52DD /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		296DCF1029293585001B52DD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				296DCF1129293641001B52DD /* SearchViewModel.swift */,
+			);
+			name = ViewModels;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		296DCF1729293E69001B52DD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				296DCF1829293E79001B52DD /* SearchCellView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		296DCF1E29295A9F001B52DD /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				296DCF1F29295AC3001B52DD /* WeatherQueryValidator.swift */,
+				296DCF2A2929B6B6001B52DD /* QueryValidatorProtocol.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		2994DECE2929B7BF00D1AD8E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				296DCF0629284CBB001B52DD /* MockURLSession.swift */,
+				29CC75A52929C1160091FBDD /* MockWeatherService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		296DCECA29282CC4001B52DD /* LoneWolfTakeHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 296DCEEF29282CC7001B52DD /* Build configuration list for PBXNativeTarget "LoneWolfTakeHome" */;
+			buildPhases = (
+				296DCEC729282CC4001B52DD /* Sources */,
+				296DCEC829282CC4001B52DD /* Frameworks */,
+				296DCEC929282CC4001B52DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoneWolfTakeHome;
+			productName = LoneWolfTakeHome;
+			productReference = 296DCECB29282CC4001B52DD /* LoneWolfTakeHome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		296DCEDA29282CC7001B52DD /* LoneWolfTakeHomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 296DCEF229282CC7001B52DD /* Build configuration list for PBXNativeTarget "LoneWolfTakeHomeTests" */;
+			buildPhases = (
+				296DCED729282CC7001B52DD /* Sources */,
+				296DCED829282CC7001B52DD /* Frameworks */,
+				296DCED929282CC7001B52DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				296DCEDD29282CC7001B52DD /* PBXTargetDependency */,
+			);
+			name = LoneWolfTakeHomeTests;
+			productName = LoneWolfTakeHomeTests;
+			productReference = 296DCEDB29282CC7001B52DD /* LoneWolfTakeHomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		296DCEC329282CC4001B52DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					296DCECA29282CC4001B52DD = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					296DCEDA29282CC7001B52DD = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 296DCECA29282CC4001B52DD;
+					};
+				};
+			};
+			buildConfigurationList = 296DCEC629282CC4001B52DD /* Build configuration list for PBXProject "LoneWolfTakeHome" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 296DCEC229282CC4001B52DD;
+			productRefGroup = 296DCECC29282CC4001B52DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				296DCECA29282CC4001B52DD /* LoneWolfTakeHome */,
+				296DCEDA29282CC7001B52DD /* LoneWolfTakeHomeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		296DCEC929282CC4001B52DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				296DCED629282CC7001B52DD /* Preview Assets.xcassets in Resources */,
+				296DCED329282CC7001B52DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		296DCED929282CC7001B52DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		296DCEC729282CC4001B52DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				296DCF022928375A001B52DD /* CityData.swift in Sources */,
+				296DCF2029295AC4001B52DD /* WeatherQueryValidator.swift in Sources */,
+				296DCED129282CC4001B52DD /* SearchView.swift in Sources */,
+				296DCF1229293641001B52DD /* SearchViewModel.swift in Sources */,
+				296DCF00292830AD001B52DD /* WeatherData.swift in Sources */,
+				296DCF1B29294A34001B52DD /* WeatherDetailView.swift in Sources */,
+				296DCEFA29282CED001B52DD /* WeatherService.swift in Sources */,
+				296DCF2B2929B6B7001B52DD /* QueryValidatorProtocol.swift in Sources */,
+				296DCEFD29282D51001B52DD /* WeatherServiceProtocol.swift in Sources */,
+				296DCF1629293C80001B52DD /* SearchListView.swift in Sources */,
+				296DCF1D29294F99001B52DD /* CityWeatherQuery.swift in Sources */,
+				296DCECF29282CC4001B52DD /* LoneWolfTakeHomeApp.swift in Sources */,
+				296DCF1929293E79001B52DD /* SearchCellView.swift in Sources */,
+				296DCF0529283B55001B52DD /* Errors.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		296DCED729282CC7001B52DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				296DCF0729284CBB001B52DD /* MockURLSession.swift in Sources */,
+				296DCEE029282CC7001B52DD /* WeatherServiceClassTests.swift in Sources */,
+				29CC75AE2929D1070091FBDD /* MockWeatherService.swift in Sources */,
+				296DCF242929B47A001B52DD /* SearchViewModelTests.swift in Sources */,
+				296DCF2229298971001B52DD /* QueryValidatorTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		296DCEDD29282CC7001B52DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 296DCECA29282CC4001B52DD /* LoneWolfTakeHome */;
+			targetProxy = 296DCEDC29282CC7001B52DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		296DCEED29282CC7001B52DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		296DCEEE29282CC7001B52DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		296DCEF029282CC7001B52DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LoneWolfTakeHome/Preview Content\"";
+				DEVELOPMENT_TEAM = QTC9TXRFDC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.llamastudios.LoneWolfTakeHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		296DCEF129282CC7001B52DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LoneWolfTakeHome/Preview Content\"";
+				DEVELOPMENT_TEAM = QTC9TXRFDC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.llamastudios.LoneWolfTakeHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		296DCEF329282CC7001B52DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QTC9TXRFDC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.llamastudios.LoneWolfTakeHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoneWolfTakeHome.app/LoneWolfTakeHome";
+			};
+			name = Debug;
+		};
+		296DCEF429282CC7001B52DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QTC9TXRFDC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.llamastudios.LoneWolfTakeHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoneWolfTakeHome.app/LoneWolfTakeHome";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		296DCEC629282CC4001B52DD /* Build configuration list for PBXProject "LoneWolfTakeHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				296DCEED29282CC7001B52DD /* Debug */,
+				296DCEEE29282CC7001B52DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		296DCEEF29282CC7001B52DD /* Build configuration list for PBXNativeTarget "LoneWolfTakeHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				296DCEF029282CC7001B52DD /* Debug */,
+				296DCEF129282CC7001B52DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		296DCEF229282CC7001B52DD /* Build configuration list for PBXNativeTarget "LoneWolfTakeHomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				296DCEF329282CC7001B52DD /* Debug */,
+				296DCEF429282CC7001B52DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 296DCEC329282CC4001B52DD /* Project object */;
+}
