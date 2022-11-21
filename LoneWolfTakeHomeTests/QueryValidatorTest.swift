@@ -47,5 +47,18 @@ class QueryValidatorTest: XCTestCase {
 //        assert
         XCTAssertFalse(invalidEmptyValidation)
     }
+    
+    func test_QueryValidator_WhenGivenSearchTextWithOnlySpaces_ReturnsFalse(){
+//        arrage
+        
+        let emptyString = "     "
+        
+//        act
+        let invalidEmptyValidation = sut.validate(searchText: emptyString)
+        
+//        assert
+        XCTAssertFalse(invalidEmptyValidation)
+    }
+    
 
 }
