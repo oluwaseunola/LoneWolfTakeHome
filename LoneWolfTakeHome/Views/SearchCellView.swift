@@ -11,7 +11,7 @@ struct SearchCellView: View {
     var city : CityData
     var body: some View {
         VStack{
-            Text("\(city.name), \(city.state), \(city.country)")
+            Text("\(city.name), \(city.state ?? ""), \(city.country)")
         }
     }
 }

@@ -37,11 +37,16 @@ class WeatherService : WeatherServiceProtocol {
             guard let data = data else {
                 return
             }
-            if let cities = try? JSONDecoder().decode([CityData].self, from: data){
+            
+            do {
+                let cities = try JSONDecoder().decode([CityData].self, from: data)
                 completion(.success(cities))
-            } else{
+            }
+            catch{
+                print(error)
                 completion(.failure(ServiceError.CityDataParsingError))
             }
+            
         }.resume()
         
     }

@@ -13,5 +13,5 @@ struct CityData : Codable, Identifiable{
     let lat : Double
     let lon : Double
     let country : String
-    let state: String
+    let state: String?
 }
