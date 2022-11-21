@@ -23,8 +23,8 @@ class WeatherService : WeatherServiceProtocol {
     ///   - completion: completion passing a Result type holding an optional array of CityData objects
     func fetchCities(from searchText: String, completion: @escaping (Result<[CityData]?, Error>)-> Void){
     
-        let urlString = "https://api.openweathermap.org/geo/1.0/direct?q=\(searchText)&limit=5&appid=71bd06ca91babce9d7c26e6fb2899550"
-        
+        var urlString = "https://api.openweathermap.org/geo/1.0/direct?q=\(searchText)&limit=5&appid=71bd06ca91babce9d7c26e6fb2899550"
+        urlString = formatURLString(string: urlString)
         guard let url = URL(string:urlString) else{
             return
         }
@@ -73,6 +73,10 @@ class WeatherService : WeatherServiceProtocol {
                 completion(.failure(ServiceError.WeatherDataParsingError))
             }
         }.resume()
+    }
+    
+    private func formatURLString(string: String)-> String{
+        return string.replacingOccurrences(of: " ", with: "%20")
     }
     
 }
