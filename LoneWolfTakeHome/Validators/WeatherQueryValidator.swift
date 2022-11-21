@@ -17,7 +17,7 @@ class WeatherQueryValidator : QueryValidator {
     /// - Parameter searchText: user search text
     /// - Returns: returns whether text is valid or not
     func validate(searchText: String) -> Bool {
-        return searchText.rangeOfCharacter(from: validSet.inverted) == nil && !searchText.isEmpty
+        return searchText.rangeOfCharacter(from: validSet.inverted) == nil && !searchText.replacingOccurrences(of: " ", with: "").isEmpty
     }
     
 }
