@@ -22,12 +22,6 @@ struct SearchView: View {
                     .frame(width:300, height:50)
                     .overlay(RoundedRectangle(cornerRadius: 15, style: .continuous).stroke())
                 
-                if !viewModel.isTextValid{
-                    Text("No special characters or empty searches")
-                        .font(.system(.footnote, design: .rounded))
-                        .foregroundColor(.red)
-                }
-                
                 NavigationLink {
                     SearchListView(viewModel: viewModel)
                 } label: {
