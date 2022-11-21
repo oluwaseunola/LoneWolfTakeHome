@@ -19,22 +19,6 @@ class QueryValidatorTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         sut = nil
     }
-
-    func test_QueryValidator_WhenGivenStringContainingSpecialCharacters_ReturnsFalse(){
-//        arrage
-        let invalidStringCharacters = "Calgary&&"
-        let invalidStringNumbers = "Calgary77"
-        
-        
-//        act
-        let invalidCharacterValidation = sut.validate(searchText: invalidStringCharacters)
-        let invalidNumberValidation = sut.validate(searchText: invalidStringNumbers)
-        
-//        assert
-        XCTAssertFalse(invalidNumberValidation)
-        XCTAssertFalse(invalidCharacterValidation)
-        
-    }
     
     func test_QueryValidator_WhenGivenEmptySearchText_ReturnsFalse(){
 //        arrage

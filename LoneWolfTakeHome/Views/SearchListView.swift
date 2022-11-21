@@ -17,12 +17,15 @@ struct SearchListView: View {
                     Text("Loading")
                     ProgressView()
                 }
-            } else if viewModel.isError {
+            } else if viewModel.cities.isEmpty{
                 VStack{
                     Text("Hmmm, we can't seem to find what you're looking for")
                         .multilineTextAlignment(.center)
                 }
-            } else{
+            } else if viewModel.isError {
+                Text("Error")
+                    .multilineTextAlignment(.center)
+            }else{
                 
                 List(viewModel.cities){ city in
                     NavigationLink {
